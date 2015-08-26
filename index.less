@@ -1,0 +1,49 @@
+///////////////////////
+// Credit Card Logos //
+///////////////////////
+
+#credit-card-logos {
+  .init( @path: '/img', @width: 160px, @height: 100px ){
+    .card-logo {
+      display: inline-block;
+      #credit-card-logos > .create-size-variant( @width, @height );
+
+      &.small {
+        #credit-card-logos > .create-size-variant( @width / 3, @height / 3 );
+      }
+
+      &.large {
+        #credit-card-logos > .create-size-variant( @width * 1.5, @height * 1.5 );
+      }
+
+      &.card-logo-visa {
+        background-image: url('@{path}/card-logo-visa.svg');
+      }
+
+      &.card-logo-mastercard {
+        background-image: url('@{path}/card-logo-mastercard.svg');
+      }
+
+      &.card-logo-amex {
+        background-image: url('@{path}/card-logo-amex.svg');
+      }
+    }
+
+    .card-logo-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+
+      > .card-logo + .card-logo {
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .create-size-variant( @width, @height ){
+    width: @width;
+    height: @height;
+    background-size: @width @height;
+  }
+}
