@@ -8,8 +8,12 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp build && ./node_modules/.bin/gulp server",
-    "install": "./node_modules/.bin/gulp build"
+    "build": "./node_modules/.bin/gulp build",
+    "prepublish": "npm run build"
   },
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "Credit",
     "Card",
