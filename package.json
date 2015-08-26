@@ -12,7 +12,10 @@
     "prepublish": "npm run build"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "img/",
+    "index.less",
+    "dist.less"
   ],
   "keywords": [
     "Credit",
