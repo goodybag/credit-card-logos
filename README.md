@@ -48,6 +48,15 @@ __HTML Usage__
 <div class="card-logo large card-logo-visa"></div>
 ```
 
+## Building
+
+After cloning, run
+
+```
+npm install
+gulp build
+```
+
 ## Licensing
 
 The SVG assets were found on https://www.iconfinder.com/ and had Creative Commons license.
