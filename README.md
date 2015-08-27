@@ -2,7 +2,7 @@
 
 > Flexible SVG credit card logo assets and CSS.
 
-![Card logos](http://storage.j0.hn/credit-card-logos.png)
+![Card logos](http://storage.j0.hn/credit-card-logos-2.png)
 
 __Install__
 
